@@ -71,10 +71,10 @@ Here are some examples::
 
     # Monitor only CPU performance while emitting 100 ICMP echo request (ping) probes to
     # www.google.com.
-    $ python3 metameasurement.py -Mcpu "ping -c 100 www.google.com" 
+    $ python3 metameasurement.py -Mcpu -c "ping -c 100 www.google.com" 
 
     # Monitor CPU performance and netstat counters (for all interfaces) for traceroute
-    $ python3 metameasurement.py -Mcpu -Mnetstat "traceroute www.google.com" 
+    $ python3 metameasurement.py -Mcpu -Mnetstat -c "traceroute www.google.com" 
 
     # Monitor CPU, IO and Netstat counters for ping
     # Set the metadata output file to start with "ping_google"
